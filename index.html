@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hallo, aku Putri!</title>
+
+    <style>
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-srif;
+            font-size: 25px;
+            color: green;
+        }
+
+        #info {
+            color: blueviolet;
+            font-weight: bold;
+            font-size: 32px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Hallo, Aku Putri Aisyah!</h1>
+    <p>Ini adalah website pertamaku.</p>
+    <p style="color: brown; font-size:25px; font-family:Georgia, 'Times New Roman', serif">yang nulis ini putri aisyah syafrudin, menggunakan css inline</p>
+    <p>Ini kita menggunakan css internal</p>
+
+    <p id="info">ini adalah komponen html dengan selector single menggunakanid elemen</p>
+
+    <button id="btn">Tombol</button>
+    <p class="'catatan">Ini adalah komponen html dengan selector group menggunakan class</p>
+    <p class="'catatan">Ini adalah komponen html dengan selector group menggunakan class</p>
+    <p class="'catatan">Ini adalah komponen html dengan selector group menggunakan class</p>
+
+    <script>
+        const tombol = document.querySelector('#btn');
+        const catatan = document.querySelector('.catatan');
+
+        tombol.addEventListener('click', function () {
+            alert('Halo, kamu berhasil mengklik tombol ini!');
+        });
+
+        catatan.addEventListener('click', function () {
+            alert('Halo, kamu berhasil mengklik catatan ini!');
+        });
+
+    </script>
+</body>
+
+</html>
