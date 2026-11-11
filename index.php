@@ -1,0 +1,3 @@
+<?php
+
+enco "Hello World";
