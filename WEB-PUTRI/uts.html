@@ -18,10 +18,15 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333;
         }
+
+        /* BAGIAN INI YANG DIUBAH MENJADI FOTO PEMANDANGAN */
         .hero-header {
-            background: linear-gradient(135deg, #4a00e0, #8e2de2);
+            /* Memanggil file foto pemandanganmu sebagai background */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background-putri.jpeg');
+            background-size: cover;          /* Agar foto menutupi seluruh area */
+            background-position: center;     /* Agar posisi foto pas di tengah */
             color: white;
-            padding: 70px 0 50px 0;
+            padding: 90px 0 70px 0;          /* Mengatur tinggi banner */
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
         }
@@ -72,9 +77,16 @@
     <header class="hero-header text-center mb-5">
         <div class="container">
             <!-- Tempatkan file foto bernama foto-putri.jpg di folder yang sama dengan index.html -->
-            <img src="foto-putri.jpeg" alt="Foto Profil Putri Aisyah Syafrudin" class="rounded-circle profile-img mb-3" onerror="this.src='https://via.placeholder.com/170?text=Foto+Putri'">
+            <a href="foto-putri.jpeg" target="_blank" title="Klik untuk lihat foto ukuran penuh">
+            <img src="foto-putri.jpeg" alt="Foto Profil Putri Aisyah Syafrudin" class="rounded-circle profile-img mb-3" style="cursor: pointer; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </a>
             <h1 class="fw-bold display-5">Putri Aisyah Syafrudin</h1>
             <p class="fs-5 text-light opacity-90 mb-0">Mahasiswa STMIK Antarbangsa | Website Enthusiast</p>
+            
+            <!-- Tombol Tambahan untuk Membuka Background Penuh -->
+            <a href="background-putri.jpeg" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3 shadow-sm">
+            <i class="bi bi-image"></i> Lihat Foto Background Penuh
+            </a>
         </div>
     </header>
 
